@@ -15,7 +15,7 @@ public class MathUtilsTest {
 
     @Test
     public void shouldThrowException() {
-        Assertions.assertThrows(ArithmeticException.class, () -> {
+        Assertions.assertThrows(ArithmeticException.class,()->{
             mathUtils.divide(10, 0);
         });
     }
